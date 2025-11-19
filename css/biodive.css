@@ -62,13 +62,6 @@ header {
 .logo-icon div {
     width: 12px;
     height: 19px;
-    background: #F7941D;
-}
-
-.logo-icon .gradient {
-    width: 36px;
-    height: 20px;
-    background: linear-gradient(90deg, #FAAE1C 0%, #F9A21E 25%, #F79021 72%, #F68922 100%);
 }
 
 .logo-text {
