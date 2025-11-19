@@ -38,11 +38,11 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             'Rhizopora mucronata': {
                 subtitle: 'Bakau Merah',
-                description: 'Rhizopora mucronata dikenal dengan akar tunjangnya yang kokoh. Spesies ini dominan di zona depan hutan mangrove dan berperan penting dalam melindungi garis pantai dari abrasi.'
+                description: 'dikenal dengan akar tunjangnya yang besar, yang membantu pohon ini berdiri kokoh di tanah berlumpur. Propagulnya (bakal bibit yang jatuh ke air) termasuk salah satu yang paling panjang di antara jenis mangrove, bahkan bisa mencapai lebih dari setengah meter. Akar dan batangnya juga menjadi tempat hidup bagi berbagai hewan kecil seperti kepiting, ikan muda, dan organisme lain, sehingga pohon ini sangat penting untuk menjaga keberagaman kehidupan di kawasan mangrove.'
             },
             'Rhizopora stylosa': {
                 subtitle: 'Bakau Kecil',
-                description: 'Rhizopora stylosa adalah spesies mangrove dengan ukuran lebih kecil dibanding kerabat dekatnya. Spesies ini adaptif terhadap berbagai kondisi lingkungan pesisir.'
+                description: 'lebih umum ditemukan di wilayah berpasir atau tepi pantai dengan ombak yang relatif lebih terbuka, sehingga sering dianggap sebagai spesies bakau “zona depan”. Propagulnya (bakal bibit yang jatuh ke air) lebih ramping dibanding kerabat dekatnya, R. mucronata. Ukuran daunnya yang lebih kecil membuatnya dapat beradaptasi dengan lingkungan lebih kering dan berangin.'
             },
             'Sonneratia alba': {
                 subtitle: 'Pidada Merah',

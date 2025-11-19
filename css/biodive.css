@@ -221,7 +221,7 @@ nav a:hover {
 }
 
 .species-details {
-    flex: 2;
+    flex: 5;
     min-width: 300px;
 }
 
@@ -229,14 +229,14 @@ nav a:hover {
     font-family: 'Mochibop', sans-serif;
     font-size: 64px;
     color: #3CA84B;
-    margin-bottom: 10px;
+
 }
 
 .species-subtitle {
     font-size: 24px;
     font-weight: 700;
     color: #3CA84B;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .conservation-status {
@@ -294,10 +294,34 @@ nav a:hover {
     align-items: center;
 }
 
-.char-icon {
+.char-tinggi {
+    width: 34px;
+    height: 40px;
+    background-image: url(../assets/icon/tinggi.png);
+    margin-right: 19px;
+    flex-shrink: 0;
+}
+
+.char-batang {
     width: 40px;
     height: 40px;
-    background: #3CA84B;
+    background-image: url(../assets/icon/batang.png);
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.char-daun {
+    width: 38px;
+    height: 40px;
+    background-image: url(../assets/icon/daun.png);
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.char-akar {
+    width: 45px;
+    height: 40px;
+    background-image: url(../assets/icon/akar.png);
     margin-right: 15px;
     flex-shrink: 0;
 }
@@ -314,11 +338,12 @@ nav a:hover {
     color: #3CA84B;
     font-size: 20px;
     line-height: 1.5;
-    font-style: italic;
+    font-style: normal;
 }
 
 .species-description strong {
     font-weight: 700;
+    font-style: italic;
 }
 
 .image-gallery {
