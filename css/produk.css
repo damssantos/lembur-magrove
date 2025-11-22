@@ -164,6 +164,14 @@ nav a:hover {
     max-width: 900px;
 }
 
+.hero-description h3 {
+    font-family: 'MochibopBold', sans-serif;
+    font-size: 35px;
+    color: rgb(250, 174, 28, 1);
+    line-height: 1.0;
+    max-width: auto;
+}
+
 /* Content Section */
 .content-section {
     background: white;
