@@ -10,74 +10,25 @@ body {
     overflow-x: hidden;
 }
 
-.container {
+/* Container navbar */
+.container-navbar {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(180deg, white 23%, rgba(255, 255, 255, 0) 100%);
+    padding: 20px 0;
+    position: relative;
+    overflow: hidden;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-/* Header Styles */
-.header {
-    width: 1440px;
-    height: 180px;
-    position: relative;
-    overflow: hidden;
-}
-
-.header-bg {
-    width: 1440px;
-    height: 180px;
-    position: absolute;
-    background: linear-gradient(180deg, white 23%, rgba(255, 255, 255, 0) 100%);
-}
-
-.header-shapes {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.header-shape {
-    position: absolute;
-    background: #F8BCBC;
-}
-
-.header-shape-1 {
-    width: 596px;
-    height: 331px;
-    left: -119px;
-    top: -132.70px;
-    transform: rotate(-11deg);
-}
-
-.header-shape-2 {
-    width: 596px;
-    height: 331px;
-    left: 820.72px;
-    top: 116.59px;
-    transform: rotate(177deg);
-}
-
-.header-shape-3 {
-    width: 715.74px;
-    height: 397.50px;
-    left: 961px;
-    top: -59.04px;
-    transform: rotate(-35deg);
-}
-
-.header-shape-4 {
-    width: 596px;
-    height: 283.90px;
-    left: 641px;
-    top: -95.30px;
-    transform: rotate(-11deg);
 }
 
 .logo {
@@ -102,6 +53,12 @@ body {
     font-size: 18px;
 }
 
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
 nav a {
     text-decoration: none;
     color: #4DBD97;
@@ -116,6 +73,17 @@ nav a {
     top: 37px;
     display: flex;
     gap: 40px;
+}
+
+.nav-links a {
+    color: #4DBD97;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #3CA84B;
 }
 
 /* Hero Section */
