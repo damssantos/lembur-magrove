@@ -1,3 +1,17 @@
+/* Reset dan base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #A7DEF8;
+    color: #333;
+    line-height: 1.6;
+}
+
 /* Font khusus untuk judul */
 @font-face {
     font-family: 'Mochibop';
@@ -19,6 +33,7 @@
     margin: 0 auto;
     padding: 0 20px;
 }
+
 /* Header */
 header {
     background: linear-gradient(180deg, white 23%, rgba(255, 255, 255, 0) 100%);
@@ -87,4 +102,251 @@ nav a {
 
 nav a:hover {
     color: #3CA84B;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    margin: 100px auto;
+    border-radius: 50px;
+    overflow: hidden;
+    height: 544px;
+    display: grid;
+    align-items: center;
+    max-width: 1231px;
+    width: 100%;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(85, 105, 31, 0.5) 0%, rgba(168, 207, 62, 0.75) 100%);
+    z-index: -1;
+}
+
+.hero-content {
+    padding: 0 80px;
+    color: white;
+    max-width: 760px;
+    height: 350px;
+}
+
+.hero-title {
+    font-family: 'Mochibop', sans-serif;
+    font-size: 64px;
+    line-height: 1.1;
+    width: 95%;
+    margin-bottom: 30px;
+}
+
+.hero-description {
+    font-size: 20px;
+    line-height: 1.3;
+    width: 300%;
+    max-width: 900px;
+}
+
+/* Content Section */
+.content-section {
+    background: white;
+    padding: 80px 0;
+    margin-top: 40px;
+}
+
+
+
+/* Footer */
+footer {
+    background: #FCF4A3;
+    padding: 80px 0 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-info {
+    flex: 2;
+    min-width: 300px;
+}
+
+.footer-title {
+    color: #4B5EAB;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    color: #4B5EAB;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.footer-contact {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-telpon {
+    width: 35px;
+    height: 35px;
+    background-image: url('../assets/icon/telpon.png');
+    margin-right: 15px;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+.contact-instagram {
+    width: 35px;
+    height: 35px;
+    background-image: url('../assets/icon/ig.png');
+    margin-right: 15px;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+.contact-yutub {
+    width: 35px;
+    height: 28px;
+    background-image: url('../assets/icon/yutub.png');
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.contact-facebook {
+    width: 35px;
+    height: 35px;
+    background-image: url('../assets/icon/fb.png');
+    margin-right: 15px;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+.contact-text {
+    color: #4B5EAB;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.copyright {
+    text-align: center;
+    color: #4B5EAB;
+    font-size: 16px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(75, 94, 171, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .species-name {
+        font-size: 48px;
+    }
+
+    .species-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .species-maps-sidebar {
+        position: static;
+        order: -1;
+    }
+
+    .maps-image {
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .footer-text,
+    .contact-text {
+        font-size: 18px;
+    }
+
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        position: static;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .species-name {
+        font-size: 36px;
+    }
+
+    .gallery-item {
+        width: 100%;
+        max-width: 312px;
+    }
+
+    .hero-content {
+        padding: 0 20px;
+    }
+
+    .image-gallery {
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-description {
+        width: 100%;
+        max-width: 100%;
+    }
 }
