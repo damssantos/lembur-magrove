@@ -38,9 +38,11 @@ body {
 header {
     background: linear-gradient(180deg, white 23%, rgba(255, 255, 255, 0) 100%);
     padding: 20px 0;
-    position: relative;
-    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
+
 
 .header-content {
     display: flex;
@@ -249,8 +251,8 @@ nav a:hover {
 }
 
 .species-maps-sidebar {
-    position: relative;
-    top: 190px;
+    position: sticky;
+    top: 100px;
 }
 
 .maps-container {
@@ -426,6 +428,7 @@ nav a:hover {
     font-size: 20px;
     line-height: 1.5;
     font-style: normal;
+    text-align: justify;
 }
 
 .species-description strong {
