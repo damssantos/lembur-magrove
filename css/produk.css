@@ -171,8 +171,6 @@ nav a:hover {
     margin-top: 40px;
 }
 
-
-
 /* Footer */
 footer {
     background: #FCF4A3;
@@ -258,7 +256,7 @@ footer {
     font-size: 20px;
 }
 
-.copyright {
+copyright {
     text-align: center;
     color: #4B5EAB;
     font-size: 16px;
@@ -297,7 +295,6 @@ footer {
     .contact-text {
         font-size: 18px;
     }
-
 
     nav ul {
         flex-wrap: wrap;
