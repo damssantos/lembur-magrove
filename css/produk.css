@@ -1,0 +1,90 @@
+/* Font khusus untuk judul */
+@font-face {
+    font-family: 'Mochibop';
+    src: url('../assets/fonts/Mochibop-Demo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MochibopBold';
+    src: url('../assets/fonts/MochibopBold-Demo.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Container utama */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* Header */
+header {
+    background: linear-gradient(180deg, white 23%, rgba(255, 255, 255, 0) 100%);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    display: flex;
+    gap: 5px;
+}
+
+.logo-icon div {
+    width: 12px;
+    height: 19px;
+}
+
+.logo-text {
+    color: #4DBD97;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4DBD97;
+    font-weight: 700;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links {
+    position: absolute;
+    right: 200px;
+    top: 37px;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: #4DBD97;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #3CA84B;
+}
