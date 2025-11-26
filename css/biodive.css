@@ -43,13 +43,21 @@ header {
     z-index: 1000;
 }
 
+.header {
+    position: relative;
+    width: 100%;
+    height: 180px; /* sesuaikan tinggi header */
+    overflow: hidden; /* biar awan tidak keluar */
+}
+
 .header-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -2;
+    object-fit: cover; 
+    z-index: -2;  
 }
 
 .header-content {

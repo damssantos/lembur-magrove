@@ -211,16 +211,20 @@ nav a:hover {
     overflow-x: auto;
     gap: 40px;
     padding: 20px 0;
+    width: 90%;
+    margin: auto;
 }
 
 .news-card {
-    min-width: 398px;
+    min-width: 420px;
     background-color: #A8CF3E;
     border-top-left-radius: 192px;
     border-top-right-radius: 192px;
     border-bottom-right-radius: 29px;
     border-bottom-left-radius: 29px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .news-image {
@@ -231,37 +235,43 @@ nav a:hover {
 
 .news-content {
     padding: 30px;
+    display: flex;
+    height: 100%;
 }
 
 .news-title {
     color: #4B5EAB;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 
 .news-excerpt {
+    font-family: 'Nunito', sans-serif;
     color: #4B5EAB;
-    font-size: 20px;
+    font-size: 36px;
+    font-weight: 700;
     margin-bottom: 30px;
 }
 
 .news-button {
     display: inline-block;
-    background-color: var(--dark-green);
-    color: var(--white);
+    background-color: #00A37C;
+    color: white;
     padding: 15px 30px;
     border-radius: 48px;
     text-decoration: none;
     font-family: 'MochibopBold', sans-serif;
     font-size: 22px;
+    margin-top: auto; 
+    align-self: flex-start;
+    width: fit-content;
 }
 
-/* Content Section */
-.content-section {
-    background: white;
-    padding: 80px 0;
-    margin-top: 40px;
+.news-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 /* Footer */

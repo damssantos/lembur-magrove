@@ -78,132 +78,25 @@ body {
 }
 
 .logo {
-    position: absolute;
-    left: 85px;
-    top: 29px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.logo-orange {
-    width: 12.21px;
-    height: 19.82px;
-    background: #F7941D;
-    position: absolute;
+.logo-icon {
+    display: flex;
+    gap: 5px;
 }
 
-.logo-orange-gradient {
-    width: 35.98px;
-    height: 19.90px;
-    left: 8.6px;
-    background: linear-gradient(90deg, #FAAE1C 0%, #F9A21E 25%, #F79021 72%, #F68922 100%);
-    position: absolute;
+.logo-icon div {
+    width: 12px;
+    height: 19px;
 }
 
-.logo-blue {
-    background: #4B8ECB;
-    position: absolute;
-}
-
-.logo-blue-1 {
-    width: 17.17px;
-    height: 18.05px;
-    left: 2.38px;
-    top: 37.39px;
-}
-
-.logo-blue-2 {
-    width: 11.37px;
-    height: 11.90px;
-    left: 19.55px;
-    top: 44.96px;
-}
-
-.logo-blue-3 {
-    width: 10.59px;
-    height: 11.37px;
-    left: 32.03px;
-    top: 46.57px;
-}
-
-.logo-blue-4 {
-    width: 11.24px;
-    height: 20.10px;
-    left: 43.73px;
-    top: 45.54px;
-}
-
-.logo-blue-5 {
-    width: 9.61px;
-    height: 15.71px;
-    left: 55.93px;
-    top: 42.76px;
-}
-
-.logo-blue-6 {
-    width: 12.85px;
-    height: 15.16px;
-    left: 73.41px;
-    top: 39.29px;
-}
-
-.logo-blue-7 {
-    width: 10.84px;
-    height: 16.47px;
-    left: 64.37px;
-    top: 40.89px;
-}
-
-.logo-blue-8 {
-    width: 11.58px;
-    height: 13.22px;
-    left: 86.26px;
-    top: 38.35px;
-}
-
-.logo-green {
-    background: #4DBD97;
-    position: absolute;
-}
-
-.logo-green-1 {
-    width: 10.06px;
-    height: 18.86px;
-    left: 14.52px;
-    top: 15.96px;
-}
-
-.logo-green-2 {
-    width: 11.36px;
-    height: 12.92px;
-    left: 25.03px;
-    top: 23.86px;
-}
-
-.logo-green-3 {
-    width: 12.12px;
-    height: 13.49px;
-    left: 63.33px;
-    top: 23.42px;
-}
-
-.logo-green-4 {
-    width: 26.32px;
-    height: 22.11px;
-    left: 74.19px;
-    top: 19.26px;
-}
-
-.logo-green-5 {
-    width: 62.42px;
-    height: 22.93px;
-    left: 0.5px;
-    top: 22.46px;
-}
-
-.logo-green-6 {
-    width: 14.76px;
-    height: 13.70px;
-    left: 37.30px;
-    top: 23.86px;
+.logo-text {
+    color: #4DBD97;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .nav-item {
@@ -247,27 +140,61 @@ body {
     width: 100%;
 }
 
-.hero-title {
-    width: 665px;
-    height: 143px;
-    left: 173px;
-    top: 308px;
+.hero-background {
     position: absolute;
-    color: #0D938D;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(33, 115, 44, 0.3) 30%, rgba(33, 115, 44, 0.8) 80%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    /* tambahkan */
+    padding: 0 80px;
+    color: white;
+    max-width: 760px;
+}
+
+.hero-title {
+    font-family: 'Mochibop', sans-serif;
     font-size: 64px;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    line-height: 58px;
+    line-height: 1.1;
+    width: 95%;
+    margin-bottom: 10px;
 }
 
 .hero-description {
-    width: 635px;
-    left: 166px;
-    top: 438px;
-    position: absolute;
-    color: #0D938D;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 1.3;
+    width: 300%;
+    max-width: 900px;
+}
+
+.hero-description h3 {
+    font-family: 'MochibopBold', sans-serif;
+    font-size: 35px;
+    color: rgb(250, 174, 28, 1);
+    line-height: 1.0;
+    max-width: auto;
 }
 
 .hero-image-container {
