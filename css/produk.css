@@ -118,21 +118,24 @@ nav a:hover {
     position: relative;
     margin: 100px auto;
     border-radius: 50px;
-    overflow: hidden;
     height: 544px;
-    display: grid;
+    display: flex;
     align-items: center;
     max-width: 1231px;
     width: 100%;
+    overflow: hidden;
+    /* boleh tetap */
 }
 
+/* Pastikan background berada di bawah hero-content */
 .hero-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -2;
+    z-index: 0;
+    /* ubah */
 }
 
 .hero-background img {
@@ -141,6 +144,7 @@ nav a:hover {
     object-fit: cover;
 }
 
+/* Overlay tetap di atas gambar tetapi di bawah teks */
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -148,14 +152,18 @@ nav a:hover {
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg, rgba(33, 115, 44, 0.3) 30%, rgba(33, 115, 44, 0.8) 80%);
-    z-index: -1;
+    z-index: 1;
+    /* ubah */
 }
 
+/* Teks hero berada paling atas */
 .hero-content {
+    position: relative;
+    z-index: 2;
+    /* tambahkan */
     padding: 0 80px;
     color: white;
     max-width: 760px;
-    height: 350px;
 }
 
 .hero-title {
