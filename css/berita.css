@@ -21,10 +21,11 @@ body {
 
 /* Header Styles */
 .header {
-    width: 1440px;
-    height: 180px;
-    position: relative;
-    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 .header-bg {
@@ -32,49 +33,6 @@ body {
     height: 180px;
     position: absolute;
     background: linear-gradient(180deg, white 23%, rgba(255, 255, 255, 0) 100%);
-}
-
-.header-shapes {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.header-shape {
-    position: absolute;
-    background: #F8BCBC;
-}
-
-.header-shape-1 {
-    width: 596px;
-    height: 331px;
-    left: -119px;
-    top: -132.70px;
-    transform: rotate(-11deg);
-}
-
-.header-shape-2 {
-    width: 596px;
-    height: 331px;
-    left: 820.72px;
-    top: 116.59px;
-    transform: rotate(177deg);
-}
-
-.header-shape-3 {
-    width: 715.74px;
-    height: 397.50px;
-    left: 961px;
-    top: -59.04px;
-    transform: rotate(-35deg);
-}
-
-.header-shape-4 {
-    width: 596px;
-    height: 283.90px;
-    left: 641px;
-    top: -95.30px;
-    transform: rotate(-11deg);
 }
 
 .logo {
@@ -107,40 +65,48 @@ body {
     top: 37px;
 }
 
-.nav-biodiversitas {
-    left: 653px;
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
 }
 
-.nav-produk {
-    left: 827px;
+nav a {
+    text-decoration: none;
+    color: #4DBD97;
+    font-weight: 700;
+    font-size: 16px;
+    transition: color 0.3s;
 }
 
-.nav-kolaborasi {
-    left: 1005px;
+.nav-links {
+    position: absolute;
+    right: 200px;
+    top: 37px;
+    display: flex;
+    gap: 40px;
 }
 
-.nav-berita {
-    left: 1161px;
+.nav-links a {
+    color: #4DBD97;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
 }
 
-.nav-about {
-    left: 1282px;
+nav a:hover {
+    color: #3CA84B;
 }
 
 /* Hero Section */
 .hero {
+    margin-top: 50px;
+    /* NAH! memberi jarak dari header ke hero */
     position: relative;
-    margin: 100px auto;
-    border-radius: 50px;
-    overflow: hidden;
-    height: 544px;
-    display: grid;
-    align-items: center;
-    max-width: 1231px;
-    width: 100%;
+    z-index: 999;
 }
 
-.hero-background {
+.hero-bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -149,7 +115,7 @@ body {
     z-index: 0;
 }
 
-.hero-background img {
+.hero-bg-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -179,7 +145,7 @@ body {
     font-size: 64px;
     line-height: 1.1;
     width: 95%;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
 }
 
 .hero-description {
@@ -187,14 +153,6 @@ body {
     line-height: 1.3;
     width: 300%;
     max-width: 900px;
-}
-
-.hero-description h3 {
-    font-family: 'MochibopBold', sans-serif;
-    font-size: 35px;
-    color: rgb(250, 174, 28, 1);
-    line-height: 1.0;
-    max-width: auto;
 }
 
 .hero-image-container {
@@ -211,17 +169,12 @@ body {
     overflow: hidden;
 }
 
-.hero-image {
-    width: 314px;
-    height: 120px;
-    left: 36px;
-    top: 55px;
-    position: absolute;
-    background: #0D938D;
-    border-top-left-radius: 300px;
-    border-top-right-radius: 300px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+.hero-description h3 {
+    font-family: 'MochibopBold', sans-serif;
+    font-size: 35px;
+    color: rgb(250, 174, 28, 1);
+    line-height: 1.0;
+    max-width: auto;
 }
 
 /* Article Cards */
