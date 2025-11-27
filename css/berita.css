@@ -215,14 +215,16 @@ nav a:hover {
 }
 
 .news-button {
-    width: 255.98px;
+    width: 250px;
     height: 50.81px;
     background: #0D938D;
-    border-radius: 47.94px;
+    border-radius: 47.94 px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    margin: 20px;
+    padding: 12px 32px 12px 32px;
 }
 
 .news-button-text {
@@ -259,7 +261,7 @@ nav a:hover {
 }
 
 .footer-title {
-    font-size: 20px;
+    font-size: 50px;
     font-weight: 700;
     margin-bottom: 10px;
 }
