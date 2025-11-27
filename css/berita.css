@@ -20,95 +20,89 @@ body {
     overflow: hidden;
 }
 
+.container-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 /* Header */
-.header {
-    width: 100%;
-    height: 180px;
-    position: relative;
-    overflow: hidden;
+header {
     background: linear-gradient(180deg, white 23%, rgba(255, 255, 255, 0) 100%);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.header-decoration {
+.header-background {
     position: absolute;
-    background: #F8BCBC;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
 }
 
-.header-decoration-1 {
-    width: 596px;
-    height: 331px;
-    left: -119px;
-    top: -132.70px;
-    transform: rotate(-11deg);
-}
-
-.header-decoration-2 {
-    width: 596px;
-    height: 331px;
-    left: 820.72px;
-    top: 116.59px;
-    transform: rotate(177deg);
-}
-
-.header-decoration-3 {
-    width: 715.74px;
-    height: 397.50px;
-    left: 961px;
-    top: -59.04px;
-    transform: rotate(-35deg);
-}
-
-.header-decoration-4 {
-    width: 596px;
-    height: 283.90px;
-    left: 641px;
-    top: -95.30px;
-    transform: rotate(-11deg);
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-    position: absolute;
-    left: 85px;
-    top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .logo-icon {
-    width: 12.21px;
-    height: 19.82px;
-    background: #F7941D;
-    position: absolute;
-    left: 27px;
-    top: 0;
+    display: flex;
+    gap: 5px;
 }
 
-.logo-gradient {
-    width: 35.98px;
-    height: 19.90px;
-    background: linear-gradient(90deg, #FAAE1C 0%, #F9A21E 25%, #F79021 72%, #F68922 100%);
-    position: absolute;
-    left: 35px;
-    top: 0;
+.logo-icon div {
+    width: 12px;
+    height: 19px;
 }
 
-.logo-leaves {
-    position: absolute;
-    left: 0;
-    top: 37px;
+.logo-text {
+    color: #4DBD97;
+    font-weight: 700;
+    font-size: 18px;
 }
 
-.nav {
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4DBD97;
+    font-weight: 700;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links {
     position: absolute;
-    left: 557px;
+    right: 200px;
     top: 37px;
     display: flex;
-    gap: 72px;
+    gap: 40px;
 }
 
-.nav-item {
+.nav-links a {
     color: #4DBD97;
     font-size: 16px;
     font-weight: 700;
-    cursor: pointer;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #3CA84B;
 }
 
 /* Hero Section */
