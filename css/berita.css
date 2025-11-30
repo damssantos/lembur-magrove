@@ -9,16 +9,16 @@ body {
     font-family: 'Nunito', sans-serif;
     background-color: #A7DEF8;
     color: #4B5EAB;
-    overflow-x: hidden;
+    line-height: 1.6;
 }
 
 /* Container utama */
 .container {
-    width: 1440px;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
 }
+
 
 .container-header {
     max-width: 1200px;
@@ -109,7 +109,7 @@ nav a:hover {
 .hero {
     width: 1231px;
     height: 544px;
-    margin: 194px auto 0;
+    margin: 100px auto 0;
     position: relative;
     border-radius: 50px;
     overflow: hidden;
@@ -133,11 +133,11 @@ nav a:hover {
 }
 
 .hero-content {
-    position: absolute;
+    position: relative;
     left: 61px;
     top: 242px;
     color: white;
-    width: 787px;
+    max-width: 760px;
 }
 
 .hero-subtitle {
@@ -215,16 +215,17 @@ nav a:hover {
 }
 
 .news-button {
-    width: 250px;
-    height: 50.81px;
-    background: #0D938D;
-    border-radius: 47.94 px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    margin: 20px;
-    padding: 12px 32px 12px 32px;
+    display: inline-block;
+    background-color: #00A37C;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 48px;
+    text-decoration: none;
+    font-family: 'MochibopBold', sans-serif;
+    font-size: 22px;
+    margin-bottom: 60px; 
+    align-self: center;
+    width: fit-content;
 }
 
 .news-button-text {
@@ -236,70 +237,100 @@ nav a:hover {
 }
 
 /* Footer */
-.footer {
-    width: 100%;
-    height: 610px;
+footer {
+    background: #FCF4A3;
+    padding: 80px 0 40px;
     position: relative;
     overflow: hidden;
-    margin-top: 100px;
-}
-
-.footer-bg {
-    width: 100%;
-    height: 475px;
-    position: absolute;
-    bottom: 0;
-    background: #FCF4A3;
+    width: 100vw; /* full layar */
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
 }
 
 .footer-content {
-    position: absolute;
-    bottom: 135px;
-    left: 77px;
-    width: 854px;
-    height: 135px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-info {
+    flex: 2;
+    min-width: 300px;
 }
 
 .footer-title {
-    font-size: 50px;
+    color: #4B5EAB;
     font-weight: 700;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
-.footer-address {
+.footer-text {
+    color: #4B5EAB;
     font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 10px;
-}
-
-.footer-copyright {
-    font-size: 20px;
-    font-weight: 400;
+    line-height: 1.6;
 }
 
 .footer-contact {
-    position: absolute;
-    bottom: 175px;
-    right: 236px;
+    flex: 1;
+    min-width: 250px;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
-.contact-icon {
+.contact-telpon,
+.contact-instagram,
+.contact-yutub,
+.contact-facebook {
+    flex-shrink: 0;
+    margin-right: 15px;
+    background-size: cover;
+}
+
+.contact-telpon {
     width: 35px;
     height: 35px;
-    background: #4B5EAB;
-    margin-right: 20px;
+    background-image: url('../assets/icon/telpon.png');
+    border-radius: 50%;
+}
+
+.contact-instagram {
+    width: 35px;
+    height: 35px;
+    background-image: url('../assets/icon/ig.png');
+    border-radius: 50%;
+}
+
+.contact-yutub {
+    width: 35px;
+    height: 28px;
+    background-image: url('../assets/icon/yutub.png');
+}
+
+.contact-facebook {
+    width: 35px;
+    height: 35px;
+    background-image: url('../assets/icon/fb.png');
+    border-radius: 50%;
 }
 
 .contact-text {
     color: #4B5EAB;
-    font-size: 20px;
     font-weight: 700;
+    font-size: 20px;
+}
+
+.copyright {
+    text-align: center;
+    color: #4B5EAB;
+    font-size: 16px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(75, 94, 171, 0.2);
 }
 
 /* Dekorasi daun di footer */
@@ -307,9 +338,17 @@ nav a:hover {
     position: absolute;
 }
 
-/* Font fallback */
+/* Font khusus untuk judul */
+@font-face {
+    font-family: 'Mochibop';
+    src: url('../assets/fonts/Mochibop-Demo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @font-face {
     font-family: 'MochibopBold';
-    src: local('Arial'), local('Helvetica');
+    src: url('../assets/fonts/MochibopBold-Demo.ttf') format('truetype');
     font-weight: bold;
+    font-style: normal;
 }
