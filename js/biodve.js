@@ -107,6 +107,7 @@ const speciesData = {
     }
 };
 
+
 // Status konservasi options
 const conservationStatuses = ['EX', 'EW', 'CR', 'EN', 'VU', 'NT', 'LC'];
 
